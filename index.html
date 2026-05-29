@@ -32,6 +32,7 @@
         <ul class="list-disc list-inside space-y-1">
           <li><a href="https://arxiv.org/pdf/2508.02443" class="text-blue-600 hover:underline">PDF (11.8 MB)</a></li>
           <li><a href="https://arxiv.org/abs/2508.02443" class="text-blue-600 hover:underline">arXiv page</a></li>
+          <li><a href="https://github.com/Thomas-Gottwald/PRIMU" class="text-blue-600 hover:underline">GitHub</a></li>
         </ul>
       </div>
     </div>
@@ -61,6 +62,7 @@
       <ul class="list-disc list-inside space-y-1 text-sm leading-relaxed mb-6">
         <li><a href="https://arxiv.org/pdf/2508.02443" class="text-blue-600 hover:underline">PDF (11.8 MB)</a></li>
           <li><a href="https://arxiv.org/abs/2508.02443" class="text-blue-600 hover:underline">arXiv page</a></li>
+          <li><a href="https://github.com/Thomas-Gottwald/PRIMU" class="text-blue-600 hover:underline">GitHub</a></li>
       </ul>
       <hr class="my-6">
     </aside>
@@ -146,6 +148,24 @@
             </svg>
             arXiv Page
           </a>
+           <!-- GitHub -->
+           <a href="https://github.com/Thomas-Gottwald/PRIMU"
+           class="inline-flex items-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
+           <!-- GitHub Octicon: mark-github -->
+           <svg class="w-5 h-5 mr-2" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+             <path fill-rule="evenodd"
+                   d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                     0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                     -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                     .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                     -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
+                     .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+                     .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                     0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+             </path>
+           </svg>
+           GitHub Code
+         </a>
         </div>
 
 
@@ -199,29 +219,32 @@
       </section>
       
       <!-- results -->
+       <!-- results -->
       
       <section id="results" class="space-y-6 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
+        <h2 class="text-2xl font-semibold">Numerical Results</h2>
+        <!-- ──  Captioning Quality ───────────────────────────────────── -->
+        <div
+        class="flex flex-col min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8">
+        <!-- Explanatory text -->
+        <div class="space-y-3 mb-4 min-[1360px]:mb-0 min-[1360px]:w-1/3">
+            <h3 class="font-semibold text-lg">
+              Uncertainty Estimation
+            </h3>
+            <p class="text-sm leading-relaxed">
+              AUSE and Pearson correlation between uncertainty map and rendering/depth error on LF, MipNeRF360 and LLFF datasets. PRIMU used direction-dependent uncertainty feature maps.
+            </p>
+        </div>
+    
+        <!-- Chart -->
+        <div class="flex-1 overflow-x-auto">
+            <img src="./assets/images/tabel_UE.png" alt="table1" class="chart-image w-full border rounded-md" />
+        </div>
+        </div>
+    </section>
+      
+      <section id="q_results" class="space-y-6 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
           <h2 class="text-2xl font-semibold">Qualitative Results</h2>
-          <!-- ──  Captioning Quality ───────────────────────────────────── -->
-          <div
-          class="flex flex-col min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8">
-          <!-- Explanatory text -->
-          <div class="space-y-3 mb-4 min-[1360px]:mb-0 min-[1360px]:w-1/3">
-              <h3 class="font-semibold text-lg">
-                Uncertainty Estimation
-              </h3>
-              <p class="text-sm leading-relaxed">
-                AUSE and Pearson correlation between uncertainty map and rendering/depth error on LF, MipNeRF360 and LLFF datasets. PRIMU used direction-dependent uncertainty feature maps.
-              </p>
-          </div>
-      
-          <!-- Chart -->
-          <div class="flex-1 overflow-x-auto">
-              <img src="./assets/images/tabel_UE.png" alt="table1" class="chart-image w-full border rounded-md" />
-          </div>
-          </div>
-      
-        <!-- ─────────────────────────────────── -->
           <div
               class="flex flex-col min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8">
               <!-- Explanatory text -->
@@ -260,6 +283,8 @@
         <ul class="list-disc list-inside space-y-2">
           <li><a href="https://arxiv.org/pdf/2508.02443" class="text-blue-600 hover:underline">PDF (11.8 MB)</a></li>
           <li><a href="https://arxiv.org/abs/2508.02443" class="text-blue-600 hover:underline">arXiv abstract &amp; BibTeX</a></li>
+          <li><a href="https://github.com/Thomas-Gottwald/PRIMU" class="text-blue-600 hover:underline">GitHub</a></li>
+          
         </ul>
       </section>
 
@@ -313,7 +338,11 @@
             </p>
           </div>
         </div>
-        <p>T.G. P.S., and M.R. acknowledge support by the state of North Rhine-Westphalia and the European Union within the EFRE/JTF project "Just scan it 3D", grant no. EFRE-20800529. E.H. and M.R.\acknowledge support through the junior research group project "UnrEAL" by the German Federal Ministry of Education and Research (BMBF), grant no. 01IS22069.</p>
+        <p>T.G. P.S., and M.R. acknowledge support by the state of North Rhine-Westphalia and the European Union within the EFRE/JTF project "Just scan it 3D", grant no. EFRE-20800529.
+          <br>E.H. and M.R. acknowledge support through the junior research group project "UnrEAL" by the German Federal Ministry of Education and Research (BMBF), grant no. 01IS22069.
+          <br>C.J. acknowledge the support from the Australian Research Council Research Hub in Intelligent Robotic Systems for Real-Time Asset Management (ARIAM) (IH210100030), QUT Centre for Robotics, and Abyss Solutions.
+          <br>M.R. acknowledges mobility support by the German Academic Exchange Service (DAAD PPP), grant no. 57700453.
+          </p>
       </section>
 
       <!-- CITATION (bottom) -->
